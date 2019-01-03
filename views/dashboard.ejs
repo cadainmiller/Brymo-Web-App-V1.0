@@ -1,0 +1,279 @@
+
+<div class="container-fluid mt-3">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Dashbaord</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Moves<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Reports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="modal" data-target="#modalLoginForm" href="#"><i class="fas fa-plus"></i></a>
+            </li>
+          </ul>
+          
+          <form class="form-inline col-sm-6 offset-sm-1 text-center">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+          </form>
+
+          <ul class="navbar-nav mr-right ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#"><%= user.name %></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fas fa-cog"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/users/logout"><i class="fas fa-sign-out-alt"></i></a>
+                </li>
+              </ul>
+
+        </div>
+      </nav>
+</div>
+<body>
+  <div class="container-fluid mt-3">
+    <div class="card text-center">
+            <div class="card-body">
+            <h5 class="card-title">TODAY</h5>
+            <table class="table">
+                <thead>
+                    <tr>
+                    <th scope="col">NAME</th>
+                    <th scope="col">TELEPHONE</th>
+                    <th scope="col">MOVING FROM</th>
+                    <th scope="col">MOVING TO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>Marcus</td>
+                    <td>876-345-2233</td>
+                    <td>Irwin</td>
+                    <td>Pitfour</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid mt-3">
+        <div class="card text-center">
+                <div class="card-body">
+                <h5 class="card-title">TOMORROW</h5>
+                <table class="table">
+                    <thead>
+                        <tr>
+                        <th scope="col">NAME</th>
+                        <th scope="col">TELEPHONE</th>
+                        <th scope="col">MOVING FROM</th>
+                        <th scope="col">MOVING TO</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>Marcus</td>
+                        <td>876-345-2233</td>
+                        <td>Irwin</td>
+                        <td>Pitfour</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-3">
+            <div class="card text-center">
+                    <div class="card-body">
+                    <h5 class="card-title">REST OF THE WEEK</h5>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                            <th scope="col">NAME</th>
+                            <th scope="col">TELEPHONE</th>
+                            <th scope="col">MOVING FROM</th>
+                            <th scope="col">MOVING TO</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td>Marcus</td>
+                            <td>876-345-2233</td>
+                            <td>Irwin</td>
+                            <td>Pitfour</td>
+                            </tr>
+                            <tr>
+                            <td>Marcus</td>
+                            <td>876-345-2233</td>
+                            <td>Irwin</td>
+                            <td>Pitfour</td>
+                            </tr>
+                            <tr>
+                            <td>Marcus</td>
+                            <td>876-345-2233</td>
+                            <td>Irwin</td>
+                            <td>Pitfour</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    </div>
+    <div class="container-fluid mt-3">
+    <div class="row">
+            <div class="col-sm-9">
+                <h5 class="card-title">REST OF THE WEEK</h5>
+              <div class="row">
+                <div class="col-4 col-sm-4">
+
+                </div>
+                <div class="col-4 col-sm-4">
+                  
+                </div>
+                <div class="col-2 col-sm-2">
+                    
+                </div>
+                <div class="col-2 col-sm-2">
+                    
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</body>
+
+<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Create New Move</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+          <form class="text-center border border-light p-3">
+              <!-- Customer Name -->
+              <input
+                  type="customername"
+                  id="customername"
+                  name="customername"
+                  class="form-control mb-4"
+                  placeholder="Customer Name"
+                  value="<%= typeof customername != 'undefined' ? customername : '' %>"
+              />
+          
+              <!-- Phone Number -->
+              <input
+                  type="phonenumber"
+                  id="phonenumber"
+                  name="phonenumber"
+                  class="form-control mb-4"
+                  placeholder="Telephone Number"
+                  value="<%= typeof phonenumber != 'undefined' ? phonenumber : '' %>"
+              />
+
+              <!-- Town -->
+              <input
+                  type="town"
+                  id="town"
+                  name="town"
+                  class="form-control mb-4"
+                  placeholder="Town"
+                  value="<%= typeof town != 'undefined' ? town : '' %>"
+              />
+
+              <!-- Move From Address -->
+                <input
+                  type="movefromaddress"
+                  id="movefromaddress"
+                  name="movefromaddress"
+                  class="form-control mb-4"
+                  placeholder="Mooving From"
+                  value="<%= typeof movefromaddress != 'undefined' ? movefromaddress : '' %>"
+                />
+
+              <!-- Move To Address -->
+              <input
+                  type="movetoaddress"
+                  id="movetoaddress"
+                  name="movetoaddress"
+                  class="form-control mb-4"
+                  placeholder="Moving To"
+                  value="<%= typeof movetoaddress != 'undefined' ? movetoaddress : '' %>"
+              />
+
+              <!-- Number Of Stairs -->
+              <input
+                  type="numberofstairs"
+                  id="numberofstairs"
+                  name="numberofstairs"
+                  class="form-control mb-4"
+                  placeholder="Number Of Stairs"
+                  value="<%= typeof numberofstairs != 'undefined' ? numberofstairs : '' %>"
+              />
+
+              <!-- Number of rooms -->
+              <input
+                  type="numberofrooms"
+                  id="numberofrooms"
+                  name="numberofrooms"
+                  class="form-control mb-4"
+                  placeholder="Number Of Rooms"
+                  value="<%= typeof numberofrooms != 'undefined' ? numberofrooms : '' %>"
+              />
+
+              <!-- Move Date -->
+              <input
+                  type="movedate"
+                  id="movedate"
+                  name="movedate"
+                  class="form-control mb-4"
+                  placeholder="Move Date (MM/DD/YYYY)"
+                  value="<%= typeof movedate != 'undefined' ? movedate : '' %>"
+              />
+
+              <!-- Move time -->
+              <input
+                  type="movetime"
+                  id="movetime"
+                  name="movetime"
+                  class="form-control mb-4"
+                  placeholder="Move Time (HH:MM)"
+                  value="<%= typeof movetime != 'undefined' ? movetime : '' %>"
+              />
+
+              <!-- Description -->
+              <div class="form-group">
+              <textarea
+                  type="description"
+                  id="description"
+                  name="description"
+                  class="form-control mb-4"
+                  placeholder="Description"
+                  value="<%= typeof description != 'undefined' ? description : '' %>"
+              ></textarea> 
+          
+          </form>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Create Move</button>
+      <div class="modal-footer d-flex justify-content-center">
+        
+      </div>
+    </div>
+  </div>
+</div>
