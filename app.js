@@ -1,3 +1,4 @@
+require('dotenv').config() // <-- use this to enable usage of the .env file
 const express = require('express');
 const expressLayouts = require('express-ejs-layouts');
 const mongoose = require('mongoose');
@@ -17,7 +18,7 @@ const db = require('./config/keys').mongoURI;
 // Connect to MongoDB
 mongoose
   .connect(
-    db,
+    process.env.mongoURI,
     {
       useNewUrlParser: true,}
   )
@@ -63,7 +64,7 @@ app.use('/', require('./routes/index'));
 app.use('/users', require('./routes/users'));
 
 //Dashbaord 
-app.use('/dashbaord', require('./routes/dashbaord'));
+app.use('/dashboard', require('./routes/dashbaord')); // <--- fixed typo here
 
 
 const PORT = process.env.PORT || 5000;

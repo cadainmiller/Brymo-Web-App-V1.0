@@ -166,7 +166,7 @@
         </button>
       </div>
       <div class="modal-body mx-3">
-          <form class="text-center border border-light p-3">
+          <form class="text-center border border-light p-3" action="/dashboard/move" method="post"> <!-- ADDED THE ACTION AND THE METHOD-->
               <!-- Customer Name -->
               <input
                   type="customername"
@@ -267,10 +267,9 @@
                   placeholder="Description"
                   value="<%= typeof description != 'undefined' ? description : '' %>"
               ></textarea> 
-          
+              <button type="submit" class="btn btn-primary btn-block">Create Move</button>
           </form>
       </div>
-      <button type="submit" class="btn btn-primary btn-block">Create Move</button>
       <div class="modal-footer d-flex justify-content-center">
         
       </div>
